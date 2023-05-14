@@ -35,7 +35,7 @@ public class p2acticalender
 	     String CurrentYear = driver.findElement(By.className("x-btn-text")).getText();
 	    
 		
-		While(!(CurrentMonth.equals(month)&&CurrentYear.equals(year))) 
+		while(!(CurrentMonth.equals(month)&&CurrentYear.equals(year))) 
 	   {
 		   driver.findElement(By.id("ext-gen48")).click();
 		   String CurrentMonth1 = driver.findElement(By.className("x-btn-text")).getText();
@@ -43,12 +43,5 @@ public class p2acticalender
 		   
 	   }
 	 }
-
-	private static calendar getInstance() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
 
 }
